@@ -150,7 +150,7 @@ module Fastlane
         end
 
         require 'sshkey'
-        k = SSHKey.generate()
+        k = SSHKey.generate(bits: 4096)
 
         body = {
           title: deploy_key_title,
